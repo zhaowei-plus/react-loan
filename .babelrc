@@ -1,0 +1,25 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 10 versions", "ie >= 9"]
+      }
+    }],
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    ["import", {
+      "libraryName": "doraemon",
+      "style": true
+    }],
+    "transform-decorators-legacy"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "dva-hmr"
+      ]
+    }
+  }
+}
