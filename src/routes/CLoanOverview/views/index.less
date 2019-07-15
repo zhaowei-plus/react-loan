@@ -1,0 +1,549 @@
+.customer-loan-overview {
+  //> .zcy-panel {
+  //  overflow-x: scroll;
+  //  >.zcy-panel-content {
+  //    min-width: 1200px;
+  //  }
+  //}
+  .marquee {
+    display: inline-block;
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    line-height: 40px;
+    background: #fdf4e8;
+    color: #d3a66f;
+    border-radius: 6px;
+    overflow: hidden;
+
+    .title {
+      display: inline-block;
+      float: left;
+      padding-right: 10px;
+      border-right: 1px solid #d3a66f;
+      height: 20px;
+      margin: 10px 10px 0 0;
+      line-height: 20px;
+    }
+
+    .content {
+      width: 100%;
+      white-space: nowrap;
+      margin-left: -120px;
+      display: inline-block;
+    }
+
+    .inner {
+      margin-left: 120px;
+      display: inline-block;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 40px;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translate(0, 0);
+
+        -ms-transform: translate(0, 0);
+      }
+
+      to {
+        transform: translate(-1580px, 0);
+
+        -ms-transform: translate(-1580px, 0);
+      }
+    }
+
+    .marquee-text {
+      display: inline-block;
+      position: absolute;
+      animation: scroll 18s linear 0s infinite;
+    }
+  }
+
+  .overview-user-avatar {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: #dce8ff;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+
+    .zcyicon {
+      color: #3177fd;
+      font-size: 32px;
+      margin-top: 7px;
+    }
+  }
+
+  .account-info-panel {
+    display: inline-block;
+    width: 100%;
+    margin-left: -260px;
+
+    .zcy-panel {
+      margin-left: 260px;
+      margin-right: 20px;
+    }
+
+    .zcy-panel-content {
+      padding: 10px 0;
+    }
+  }
+
+  .repayment-plan {
+    color: #202020;
+
+    &:hover {
+      color: #3177fd;
+    }
+  }
+
+  .my-prod-panel {
+    width: 260px;
+    float: right;
+    margin-top: 20px;
+  }
+
+  .credit-score {
+    display: inline-block;
+    width: 113px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 14.5px;
+    background-color: #f6f7fa;
+    border: 1px solid #edeff5;
+    color: #84888e;
+  }
+
+  .summary {
+    padding-left: 20px;
+  }
+
+  .summary-list-title {
+    margin-top: 20px;
+    position: relative;
+    right: -8px;
+  }
+
+  .title-tag {
+    width: 92px;
+    height: 30px;
+    line-height: 32px;
+    text-align: center;
+    display: inline-block;
+    background-color: #f7f7f7;
+    border: 1px solid #e9e9e9;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .prod-list-switch {
+    float: right;
+
+    .anticon {
+      font-size: 16px;
+      padding: 2px;
+      color: #ded7d8;
+      cursor: pointer;
+    }
+
+    .anticon.active {
+      color: #3177fd;
+    }
+  }
+
+  .prod-list-item {
+    background: rgba(45, 45, 45, 0.40);
+    width: 260px;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .loan-name {
+    display: block;
+    max-height: 50px;
+    overflow: hidden;
+    line-height: 25px;
+    font-size: 20px;
+    padding: 0 20px;
+  }
+
+  .loan-channel {
+    display: block;
+    overflow: hidden;
+    max-width: 220px;
+    margin: auto;
+    margin-top: 8px;
+  }
+
+  .prod-list-item.applying {
+    .loan-title {
+      padding-top: 34px;
+    }
+
+    .loan-process {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .loan-limit {
+      font-size: 30px;
+      color: #d3a66f;
+    }
+
+    .loan-button {
+      width: 100px;
+      height: 32px;
+      display: inline-block;
+      margin-top: 29px;
+      text-align: center;
+      line-height: 32px;
+      cursor: pointer;
+      background-image: linear-gradient(-180deg, #ebd2a8 0%, #d3a66f 100%);
+      background-color: #ebd2a8;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .loan-channel {
+      background: #20968f;
+      border: 1px solid #20968f;
+      border-radius: 2px;
+      font-size: 12px;
+      padding: 3px;
+    }
+  }
+
+  .prod-list-item.detail {
+    background-image: linear-gradient(-206deg, #e0b767 0%, #bf9749 95%);
+    background-color: #e0b767;
+    position: relative;
+
+    .loan-title {
+      padding-top: 34px;
+    }
+
+    .loan-name {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .loan-amount-wrap {
+      padding: 10px 15px;
+      text-align: left;
+    }
+
+    .loan-label {
+      opacity: 0.6;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .loan-process {
+      margin-top: 60px;
+      font-size: 16px;
+    }
+
+    .loan-limit, .loan-amount {
+      font-size: 22px;
+    }
+
+    .loan-notice {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 12px;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      background: rgba(45, 45, 45, 0.20);
+    }
+
+    .loan-button {
+      width: 100px;
+      height: 32px;
+      display: inline-block;
+      margin-top: 30px;
+      text-align: center;
+      line-height: 32px;
+      cursor: pointer;
+      background-image: linear-gradient(-180deg, #ebd2a8 0%, #d3a66f 100%);
+      background-color: #ebd2a8;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .loan-channel {
+      border: 1px solid #fff;
+      border-radius: 2px;
+      font-size: 12px;
+      padding: 3px;
+    }
+  }
+
+  .none-prod {
+    background: #f7f7f7;
+    border: 1px solid #e9e9e9;
+    width: 260px;
+    height: 300px;
+    text-align: center;
+    color: #ccc;
+
+    .zcyicon {
+      font-size: 50px;
+      margin-top: 86px;
+    }
+
+    .text {
+      margin: 10px 0 36px 0;
+    }
+
+    .recommend-btn {
+      background: #d3a66f;
+      display: inline-block;
+      border-radius: 6px;
+      width: 100px;
+      height: 32px;
+      color: #fff;
+      text-align: center;
+      line-height: 32px;
+    }
+  }
+
+  .zcy-overview-swiper {
+    margin-left: -40px;
+    margin-right: -50px;
+
+    .card {
+      width: ~"calc(33.3% - 14px)";
+    }
+
+    .stage {
+      margin: 0 20px;
+    }
+  }
+
+  .carousel_wrap {
+    margin: 0 -5px;
+  }
+
+  .carousel_inner_bid_wrap {
+    height: 150px;
+    border: 1px solid #ebebeb;
+    padding: 20px;
+    margin: 0 10px;
+
+    .ant-btn {
+      margin-top: 20px;
+      border: 1px solid #3177fd;
+      background-color: #fff;
+      color: #3177fd;
+      border-radius: 32px;
+
+      &:hover {
+        background-color: #3177fd;
+        color: #fff;
+      }
+    }
+
+    .none-data-content {
+      margin-top: 12px;
+    }
+    .text {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #b0b0b0;
+    }
+  }
+
+  .carousel_inner_img_wrap {
+    margin: 0 5px;
+  }
+
+  .carousel_inner_link {
+    display: inline-block;
+  }
+
+  .carousel_inner_img {
+    width: 100%;
+  }
+
+  .calculate-title {
+    margin: 40px 0 20px -50px;
+  }
+
+  .calculate-rate {
+    height: 360px;
+  }
+
+  .calc-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 74px;
+    height: 74px;
+    text-align: center;
+    background-image: linear-gradient(-180deg, #ff8674 0%, #ff587a 100%);
+    background-color: #ff8674;
+    color: #fff;
+    border-radius: 100%;
+    line-height: 17px;
+    cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(-180deg, #fcb453 0%, #fd6b69 100%);
+      background-color: #fcb453;
+    }
+  }
+
+  .calculate-rate-panel {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      right: 0;
+      top: 35px;
+      content: "";
+      width: 1px;
+      height: 290px;
+      background-color: #d8d8d8;
+    }
+  }
+
+  .calc-logo, .calc-slogan {
+    float: left;
+    margin-right: 12px;
+  }
+
+  .calc-logo img {
+    width: 38px;
+    height: 48px;
+  }
+
+  .container .card:first-child {
+    border-radius: 0 6px 6px 6px;
+  }
+
+  .rate-column-title-wrap {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+
+    .title {
+      color: #3177fd;
+      font-size: 24px;
+    }
+  }
+
+  .input-label {
+    margin-left: 10px;
+    color: #939393;
+  }
+
+  .chart-name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+  }
+
+  .notice {
+    padding-left: 25px;
+    margin-top: -40px;
+    color: #999;
+  }
+
+  .notice-info-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 5px;
+    background: rgba(49, 119, 253, 0.20);
+
+    .anticon-info {
+      color: #3177fd;
+    }
+  }
+
+  .zcy-overview-swiper .number {
+    font-size: 24px !important;
+    white-space: nowrap;
+  }
+}
+
+.loan-recommend-loading {
+  .ant-modal-close {
+    display: none;
+  }
+
+  .ant-modal-content {
+    height: 260px;
+    text-align: center;
+    color: #3177fd;
+  }
+
+  .title {
+    font-size: 26px;
+    font-weight: normal;
+    color: #3177fd;
+  }
+
+  .ant-spin-nested-loading {
+    margin-top: 53px;
+  }
+}
+
+.help-wrap {
+  border: 1px solid #d1d7e8;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:hover {
+    background-color: #f4f8ff;
+    border-color: #edeff5;
+  }
+
+  .anticon {
+    color: #96aec5;
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .content {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #666;
+    max-height: 40px;
+    overflow: hidden;
+  }
+}

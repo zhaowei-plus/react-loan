@@ -1,0 +1,206 @@
+.stage-repayment-item {
+  width: 240px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+
+  .item-header {
+    height: 94px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    overflow: hidden;
+
+    .header-icon, .header-content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .header-icon {
+      z-index: 1;
+      img {
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        right: -16px;
+        bottom: -16px;
+        &.overdue {
+          right: -16px;
+          bottom: -16px;
+        }
+        &.success {
+          right: -16px;
+          bottom: -16px;
+        }
+        &.cancelled {
+          right: -16px;
+          bottom: -16px;
+        }
+        &.waiting {
+          right: -16px;
+          bottom: -16px;
+        }
+      }
+    }
+
+    .header-content {
+      z-index: 3;
+      padding: 10px;
+      font-family: MicrosoftYaHei;
+      color: #fff;
+
+      .stage {
+        font-size: 12px;
+        line-height: 16px;
+        z-index: 3;
+      }
+      .amount {
+        font-size: 28px;
+        line-height: 24px;
+        text-align: center;
+        position: relative;
+
+        .line {
+          position: absolute;
+          left: 32px;
+          width: 156px;
+          height: 1px;
+          z-index: 2;
+          border: 1px solid rgba(255, 255, 255, .6);
+        }
+        .unit {
+          font-family: MicrosoftYaHei-Bold;
+          font-size: 16px;
+          line-height: 14px;
+        }
+      }
+      .account {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+      }
+    }
+  }
+
+  .item-content {
+    background-color: #fff;
+    margin: 0 10px;
+    padding: 10px 0 14px;
+    border-bottom: 2px dashed #efeeee;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+
+    .ant-row {
+      height: 32px;
+      line-height: 32px;
+      padding: 0 10px;
+    }
+    .repay-title {
+      color: #909090;
+    }
+    .repay-info {
+      color: #0e0e0e;
+      line-height: 16px;
+    }
+    .repay-link {
+      margin-left: 10px;
+      color: #3177fd;
+    }
+  }
+
+  .item-footer {
+    height: 48px;
+    line-height: 48px;
+    padding: 0 10px;
+    font-family: MicrosoftYaHei;
+    font-size: 16px;
+    color: #606060;
+    background-color: #fff;
+    text-align: right;
+    position: relative;
+
+    .footer-icon {
+      z-index: 1;
+      img {
+        position: absolute;
+        width: 96px;
+        height: 22px;
+        left: 10px;
+        top: 14px;
+      }
+    }
+  }
+}
+
+.popover-repayment-content-wrap {
+  font-family: MicrosoftYaHei;
+  font-size: 14px;
+
+  .ant-row {
+    height: 28px;
+    line-height: 28px;
+  }
+  .popover-repay-title {
+    color: #909090;
+  }
+  .popover-repay-info {
+    float: right;
+    color: #202020;
+  }
+}
+
+.repay-success {
+  .item-header {
+    background: #6c9;
+  }
+  .item-footer {
+    color: #3fc77f;
+  }
+}
+.repay-waiting {
+  .item-header {
+    background: #f2f2f2;
+    .header-content {
+      .stage {
+        color: #919191;
+      }
+      .amount {
+        color: #7c6666;
+        .unit {
+          color: #7c6666;
+        }
+      }
+      .account {
+        color: #818181;
+      }
+    }
+  }
+  .item-footer {
+    color: black;
+  }
+}
+.repay-overdue {
+  .item-header {
+    background-color: #ff6262;
+  }
+  .item-footer {
+    color: #ff625c;
+  }
+}
+.repay-cancelled {
+  .item-header {
+    background-color: #6c9;
+  }
+  .item-content {
+    .repay-link {
+      color: #adb1b6;
+    }
+  }
+  .item-footer {
+    color: #adb1b6;
+  }
+}

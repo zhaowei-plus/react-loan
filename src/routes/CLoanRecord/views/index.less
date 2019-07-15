@@ -1,0 +1,46 @@
+.list-sub-title {
+  color: #8e8e8e;
+}
+
+.money {
+  color: #ff7900;
+}
+
+.repayment-amount-wrap {
+  font-size: 20px;
+  color: #0e0e0e;
+  font-family: MicrosoftYaHei;
+  display: flex;
+
+  .repayment-item {
+    padding: 0 10px;
+    flex: 1;
+    height: 98px;
+    line-height: 98px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-of-type) {
+      border-right: 1px dashed #e5e5e5;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      margin-right: 4px;
+    }
+
+    .amount-title {
+      color: #606060;
+      white-space: nowrap;
+    }
+    .amount-info {
+      font-family: MicrosoftYaHei-Bold;
+      color: rgb(252, 97, 16);
+      line-height: 26px;
+      font-weight: 700;
+    }
+  }
+}

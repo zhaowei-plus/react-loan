@@ -1,0 +1,170 @@
+.money {
+  color: #ff7900;
+  text-align: right;
+}
+
+.money-color {
+  color: #ff7900;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.panel-sub-title {
+  display: inline-block;
+  border-left: 3px solid #3177fd;
+  padding-left: 8px;
+  line-height: 16px;
+  color: #001830;
+  margin-bottom: 15px;
+
+  .panel-warning {
+    font-size: 10px;
+    margin-left: 30px;
+    color: #999;
+  }
+}
+
+.info-padding {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.list-sub-title {
+  color: #8e8e8e;
+}
+
+.green {
+  color: #3fc77f;
+}
+
+.red {
+  color: #ff625c;
+}
+
+.orange {
+  color: #ff7b1d;
+}
+
+.gray {
+  color: #adb1b6;
+}
+
+.blue {
+  color: #197aff;
+}
+
+.second-level-title-wrapper {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.none-data-content {
+  color: #b0b0b0;
+  text-align: center;
+
+  .zcyicon {
+    font-size: 50px;
+  }
+
+  h3 {
+    color: #b0b0b0;
+  }
+}
+
+.tag-item {
+  border: none;
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #3177fd;
+  background-color: #edf3fe;
+
+  &:hover {
+    background: #e3ecfc;
+    color: #3177fd;
+  }
+}
+
+.g2-tooltip {
+  pointer-events: none !important;
+}
+
+.ant-badge-status-dot {
+  &.ant-badge-status-green {
+    background-color: #3fc77f;
+  }
+  &.ant-badge-status-blue {
+    background-color: #197aff;
+  }
+  &.ant-badge-status-gray {
+    background-color: #adb1b6;
+  }
+  &.ant-badge-status-red {
+    background-color: #ff625c;
+  }
+}
+
+.zcy-tabulation-header-tab {
+  padding-left: 10px !important;
+}
+
+/**
+  ... 加载效果
+ */
+.loading-dotting {
+  display: inline-block;
+  min-width: 2px;
+  min-height: 2px;
+  box-shadow: 2px 0 currentColor, 6px 0 currentColor, 10px 0 currentColor;
+  /* for IE9+, ..., */
+  animation: dot 1s infinite step-start both;
+  /* for IE10+, ... */
+}
+
+.loading-dotting:before {
+  content: '...';
+}
+
+.loading-dotting::before {
+  content: '';
+}
+
+@keyframes dot {
+  25% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 2px 0 currentColor;
+  }
+  75% {
+    box-shadow: 2px 0 currentColor, 6px 0 currentColor;
+  }
+}
+
+.list-badge {
+  .ant-badge-status-text {
+    color: #202020;
+  }
+}
+
+.fix-alert-icon {
+  .ant-alert-icon {
+    top: 11.5px;
+  }
+}
